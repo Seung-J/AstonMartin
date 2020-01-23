@@ -19,62 +19,68 @@
     font-family: Scheherazade;
 }
 @media screen and (max-width:767px){
+    body {
+        width: 100%;
+        height: 100%;
+    }
     .wrap{position: relative;}
     header{position: fixed; width: 100%; z-index: 1;}
-    .sub header{background-color: rgba(0, 0, 0, 0.5); height: 35px;}
+    header::after{content: ""; display: block; visibility: hidden; clear: both;}
+    .sub header{background-color: rgba(0, 0, 0, 0.5); height: 45px;}
     header h1{
         background: url("../images/top_logo.png") no-repeat center;
         background-size: contain;
-        width: 15%; margin: 0 auto;
-        height: 35px;
+        width: 30%; margin: 0 auto; margin-left: 35%; margin-top: 2%;
+        height: 30px; float: left;
         text-indent: -9999px;
     }
-    header ul{position: absolute; top: 40%; width: 100%;}
-    header ul::after{
-        content: ""; display: block; visibility: hidden;
-        clear: both;
-    }
     .wrap > header nav{display:block; width: 100%;}
-    .wrap > header nav .mui{display: block; color: white; margin-left: 90%; padding-top: 15px;}
+    .wrap > header nav .mui{display: block; color: white; margin-left: 90%; margin-top: 2%;}
     .wrap > header nav label.mui{
-        width: 30px; cursor: pointer; 
+        width: 20px; cursor: pointer; 
     }
     .wrap > header nav input[type="checkbox"]{display: none;}
-    .wrap > header nav label.mui + input[type='checkbox']#mnav:checked + ul{
-        height: 140px; padding-top: 20px;
-    }
     .wrap > header nav ul{
-        height:0; overflow: hidden; transition-duration:2s;
+        height:0; overflow: hidden;
     }
-    .wrap > header nav ul li{
-        display: block; margin-bottom: 20px;
-        text-align: right; margin-right: 30px;
+    header nav input[type=checkbox] {
+        display: none; 
     }
-    header ul li a{
-        text-decoration: none; color: white; font-size: 1vw;
-        font-weight: 700; text-transform: uppercase; display: block;
-    }
-
-    header ul li a:before, header ul li a:after {
-        content: '';
-        border-bottom: solid 1px white;
-        position: absolute;
-        bottom: 0;
-        width: 0;
+    header nav input[type=checkbox]:checked ~ #overlay {
+        visibility: visible;
     }
       
-    header ul li a:before { left: 0; }
-    header ul li a:after { right: 0; }
-      
-    header ul li a:hover:before, header ul li a:hover:after {
-        width: 50%;
+    .wrap > header #overlay {
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 2;
+        visibility: hidden;
+        position: fixed;
     }
-    header ul li a.active:before, header ul li a.active:after {
-        width: 50%;
+    .wrap > header #overlay.active {
+        visibility: visible;
     }
-    header ul li a:before, header ul li a:after {
-        -webkit-transition: all 0.2s ease;
-        transition: all 0.2s ease;
+    .wrap > header #overlay ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        height: 100%;
+        padding-left: 0;
+        list-style-type: none;
+    }
+    .wrap > header #overlay ul li {
+        padding: 1em;
+    }
+    .wrap > header #overlay ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.5em;
+    }
+    .wrap > header #overlay ul li a.activ{
+        color: #333332;
     }
     /* header fin */
 
