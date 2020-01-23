@@ -32,7 +32,7 @@ html, body, div, h1, h2, h3, h4, h5, h6, section { margin: 0; padding: 0; border
     .home > .pageContainer section.active h2,
     .home > .pageContainer section.active p{
         animation-name: text-focus-in;
-        animation-duration: 4s;
+        animation-duration: 2s;
         animation-timing-function: cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
         animation-iteration-count: 1;
     }
@@ -187,7 +187,7 @@ html, body, div, h1, h2, h3, h4, h5, h6, section { margin: 0; padding: 0; border
     .home > .pageContainer section.active h2,
     .home > .pageContainer section.active p{
         animation-name: text-focus-in;
-        animation-duration: 4s;
+        animation-duration: 2s;
         animation-timing-function: cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
         animation-iteration-count: 1;
     }
@@ -342,7 +342,7 @@ html, body, div, h1, h2, h3, h4, h5, h6, section { margin: 0; padding: 0; border
     .home > .pageContainer section.active h2,
     .home > .pageContainer section.active p{
         animation-name: text-focus-in;
-        animation-duration: 4s;
+        animation-duration: 2s;
         animation-timing-function: cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
         animation-iteration-count: 1;
     }
