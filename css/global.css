@@ -79,7 +79,7 @@
         text-decoration: none;
         font-size: 1.5em;
     }
-    .wrap > header #overlay ul li a.activ{
+    .wrap > header #overlay ul li a.active{
         color: #333332;
     }
     /* header fin */
@@ -117,25 +117,25 @@
         height: 100px;
         text-indent: -9999px;
     }
-    header ul{position: absolute; top: 40%; width: 100%;}
-    header ul::after{
+    header #overlay ul{position: absolute; top: 40%; width: 100%;}
+    header #overlay ul::after{
         content: ""; display: block; visibility: hidden;
         clear: both;
     }
-    header ul li{position: absolute; list-style: none; float: left; }
-    header ul li:first-of-type{left: 3%;}
-    header ul li:nth-of-type(2){left: 57.5%;}
-    header ul li:nth-of-type(3){left: 60%;}
-    header ul li:nth-of-type(4){left: 65.5%;}
-    header ul li:nth-of-type(5){left: 68.5%;}
-    header ul li:nth-of-type(6){left: 79.2%;}
-    header ul li:last-of-type{left: 86.5%;}
-    header ul li a{
+    header #overlay ul li{position: absolute; list-style: none; float: left; }
+    header #overlay ul li:first-of-type{left: 3%;}
+    header #overlay ul li:nth-of-type(2){left: 57.5%;}
+    header #overlay ul li:nth-of-type(3){left: 60%;}
+    header #overlay ul li:nth-of-type(4){left: 65.5%;}
+    header #overlay ul li:nth-of-type(5){left: 68.5%;}
+    header #overlay ul li:nth-of-type(6){left: 79.2%;}
+    header #overlay ul li:last-of-type{left: 86.5%;}
+    header #overlay ul li a{
         text-decoration: none; color: white; font-size: 1vw;
         font-weight: 700; text-transform: uppercase; display: block;
     }
 
-    header ul li a:before, header ul li a:after {
+    header #overlay ul li a:before, header #overlay ul li a:after {
         content: '';
         border-bottom: solid 1px white;
         position: absolute;
@@ -143,16 +143,16 @@
         width: 0;
     }
       
-    header ul li a:before { left: 0; }
-    header ul li a:after { right: 0; }
+    header #overlay ul li a:before { left: 0; }
+    header #overlay ul li a:after { right: 0; }
       
-    header ul li a:hover:before, header ul li a:hover:after {
+    header #overlay ul li a:hover:before, header #overlay ul li a:hover:after {
         width: 50%;
     }
-    header ul li a.active:before, header ul li a.active:after {
+    header #overlay ul li a.active:before, header #overlay ul li a.active:after {
         width: 50%;
     }
-    header ul li a:before, header ul li a:after {
+    header #overlay ul li a:before, header #overlay ul li a:after {
         -webkit-transition: all 0.2s ease;
         transition: all 0.2s ease;
     }
@@ -191,25 +191,25 @@
         height: 100px;
         text-indent: -9999px;
     }
-    header ul{position: absolute; top: 40%; width: 100%;}
-    header ul::after{
+    header #overlay ul{position: absolute; top: 40%; width: 100%;}
+    header #overlay ul::after{
         content: ""; display: block; visibility: hidden;
         clear: both;
     }
-    header ul li{position: absolute; list-style: none; float: left; }
-    header ul li:first-of-type{left: 3%;}
-    header ul li:nth-of-type(2){left: 59%;}
-    header ul li:nth-of-type(3){left: 62%;}
-    header ul li:nth-of-type(4){left: 67%;}
-    header ul li:nth-of-type(5){left: 70%;}
-    header ul li:nth-of-type(6){left: 80%;}
-    header ul li:last-of-type{left: 86.5%;}
-    header ul li a{
+    header #overlay ul li{position: absolute; list-style: none; float: left; }
+    header #overlay ul li:first-of-type{left: 3%;}
+    header #overlay ul li:nth-of-type(2){left: 59%;}
+    header #overlay ul li:nth-of-type(3){left: 62%;}
+    header #overlay ul li:nth-of-type(4){left: 67%;}
+    header #overlay ul li:nth-of-type(5){left: 70%;}
+    header #overlay ul li:nth-of-type(6){left: 80%;}
+    header #overlay ul li:last-of-type{left: 86.5%;}
+    header #overlay ul li a{
         text-decoration: none; color: white; font-size: 0.9vw;
         font-weight: 700; text-transform: uppercase; display: block;
     }
 
-    header ul li a:before, header ul li a:after {
+    header #overlay ul li a:before, header #overlay ul li a:after {
         content: '';
         border-bottom: solid 1px white;
         position: absolute;
@@ -217,16 +217,16 @@
         width: 0;
     }
       
-    header ul li a:before { left: 0; }
-    header ul li a:after { right: 0; }
+    header #overlay ul li a:before { left: 0; }
+    header #overlay ul li a:after { right: 0; }
       
-    header ul li a:hover:before, header ul li a:hover:after {
+    header #overlay ul li a:hover:before, header #overlay ul li a:hover:after {
         width: 50%;
     }
-    header ul li a.active:before, header ul li a.active:after {
+    header #overlay ul li a.active:before, header #overlay ul li a.active:after {
         width: 50%;
     }
-    header ul li a:before, header ul li a:after {
+    header #overlay ul li a:before, header #overlay ul li a:after {
         -webkit-transition: all 0.2s ease;
         transition: all 0.2s ease;
     }
