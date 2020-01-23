@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HOME</title>
+  <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<link rel="shortcut icon" id="favicon" href="favicon.png"> 
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
+  <link href='css/onepage-scroll.css' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/import.css">
+  <script src="https://kit.fontawesome.com/ca85dab293.js" crossorigin="anonymous"></script>
+  <style>
+    html {
+      height: 100%;
+    }
+    body {
+      background: #E2E4E7;
+      padding: 0;
+      text-align: center;
+      font-family: 'open sans';
+      position: relative;
+      margin: 0;
+      height: 100%;
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    .wrap {
+    	height: 100% !important;
+    	height: 100%;
+    	margin: 0 auto; 
+    	overflow: hidden;
+    }
+    nav{
+      z-index:1000;
+    }
+	</style>
+	<script>
+	  $(document).ready(function(){
+      $(".pageContainer").onepage_scroll({
+        sectionContainer: "section",     // section 대상설정.
+        easing: "ease",                  // css3 가속도설정. ease-in, ease-out, cubic....
+        animationTime: 1000,             // section간 전환속도
+        pagination: true,                // 우측 pagenation 설정.
+        updateURL: false,                // page 전환시 url 에 #1,2,3 표시.
+        beforeMove: function(index) {},  // 페이지 이동전 함수호출
+        afterMove: function(index) {},   // 페이지 이동후 함수호출
+        loop: true,                     // 페이지 전환 반복여부
+        keyboard: true,                  // 키보드 조종여부 (up : 위, down : 아래, space : 한페이지씩 이동, home : 첫페이지로, end : 마지막페이지)
+        responsiveFallback: 200,        // scroll 플러그인 해제 기준 해상도너비(width). 사용안할시 false.
+        direction: "vertical",            // 동작방향설정 "horizontal" "vertical"
+      });
+		});
+		
+	</script>
+</head>
+<body>
+  <div class="wrap home">
+    <header>
+        <h1>toplogo</h1>
+        <nav>
+          <label for="mnav" class="fas fa-bars mui fa-2x"></label>
+          <input type="checkbox" id="mnav" class="mui">
+          <ul>
+              <li><a href="indax.html" class="active">HOME</a></li>
+              <li><a href="sub1.html">DBX</a></li>
+              <li><a href="sub2.html">VANTAGE</a></li>
+              <li><a href="sub3.html">DB11</a></li>
+              <li><a href="sub4.html">DBS SUPERLEGGERA</a></li>
+              <li><a href="sub5.html">RAPIDE AMR</a></li>
+              <li><a href="sub6.html">ASTON MARTIN VALKYRIE</a></li>
+          </ul>
+        </nav>
+    </header>
+	  <div class="pageContainer">
+      <section class="page2 dbx">
+        <h2>DBX</h2>
+        <p>Beautiful Is Relentless</p>
+      </section>
+      <section class="page3 vantage">
+        <h2>VANTAGR</h2>
+        <p>The Archetypal Hunter</p>
+      </section>
+      <section class="page4 db11">
+        <h2>DB11</h2>
+        <p>Classically Aston Martin</p>
+      </section>
+      <section class="page5 dbs">
+        <h2>DBS<br>SUPERLEGGERA</h2>
+        <p>Beautiful Is Absolute</p>
+      </section>
+      <section class="page6 amr">
+        <h2>RAPIDE AMR</h2>
+        <p>Beautiful Unleashed</p>
+      </section>
+      <section class="page7 valkyrie">
+        <h2>VALKYRIE</h2>
+        <p>Otherworldly Performance</p>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

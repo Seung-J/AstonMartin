@@ -1,0 +1,248 @@
+.wrap header ul li a{
+    font-family: Cormorant Infant;
+}
+.home section h2,
+.home section p,
+.sub section .spectArea dl dt,
+.sub section .mainText h2,
+.sub section .detailText dl dt{
+    font-family: Ibarra Real Nova;
+}
+.sub section .spectArea dl dd{
+    font-family: Roboto;
+}
+.sub section .mainText p{
+    font-family: Cinzel;
+}
+.sub section .detailText dl dd,
+.wrap footer ul li a{
+    font-family: Scheherazade;
+}
+@media screen and (max-width:767px){
+    .wrap{position: relative;}
+    header{position: fixed; width: 100%; z-index: 1;}
+    .sub header{background-color: rgba(0, 0, 0, 0.5); height: 35px;}
+    header h1{
+        background: url("../images/top_logo.png") no-repeat center;
+        background-size: contain;
+        width: 15%; margin: 0 auto;
+        height: 35px;
+        text-indent: -9999px;
+    }
+    header ul{position: absolute; top: 40%; width: 100%;}
+    header ul::after{
+        content: ""; display: block; visibility: hidden;
+        clear: both;
+    }
+    .wrap > header nav{display:block; width: 100%;}
+    .wrap > header nav .mui{display: block; color: white; margin-left: 90%; padding-top: 15px;}
+    .wrap > header nav label.mui{
+        width: 30px; cursor: pointer; 
+    }
+    .wrap > header nav input[type="checkbox"]{display: none;}
+    .wrap > header nav label.mui + input[type='checkbox']#mnav:checked + ul{
+        height: 140px; padding-top: 20px;
+    }
+    .wrap > header nav ul{
+        height:0; overflow: hidden; transition-duration:2s;
+    }
+    .wrap > header nav ul li{
+        display: block; margin-bottom: 20px;
+        text-align: right; margin-right: 30px;
+    }
+    header ul li a{
+        text-decoration: none; color: white; font-size: 1vw;
+        font-weight: 700; text-transform: uppercase; display: block;
+    }
+
+    header ul li a:before, header ul li a:after {
+        content: '';
+        border-bottom: solid 1px white;
+        position: absolute;
+        bottom: 0;
+        width: 0;
+    }
+      
+    header ul li a:before { left: 0; }
+    header ul li a:after { right: 0; }
+      
+    header ul li a:hover:before, header ul li a:hover:after {
+        width: 50%;
+    }
+    header ul li a.active:before, header ul li a.active:after {
+        width: 50%;
+    }
+    header ul li a:before, header ul li a:after {
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+    }
+    /* header fin */
+
+    .wrap footer{width: 100%; background-color: #262626; position: relative; height: 55px;}
+    .wrap footer h2{
+        text-indent: -9999px;
+        background: url(../images/footerLOGO.png) no-repeat center; width: 10%;
+        background-size: contain; position: absolute; height: 50px; left: 45%; top: 15%;
+    }
+    .wrap footer ul{width: 100%; text-align: center; position: relative; height: 100%; }
+    .wrap footer ul::after{
+        content: ""; display: block; visibility: hidden; clear: both;
+    }
+    .wrap footer ul li{float: left; list-style: none; position: absolute; top: 48%;}
+    .wrap footer ul li{width: 15%;}
+    .wrap footer ul li:nth-of-type(2){left: 15%;}
+    .wrap footer ul li:nth-of-type(3){left: 30%;}
+    .wrap footer ul li:nth-of-type(4){right: 30%;}
+    .wrap footer ul li:nth-of-type(5){right: 15%;}
+    .wrap footer ul li:last-of-type{right: 0;}
+    .wrap footer ul li a{text-decoration: none; color: white; font-size: 1.3vw;}
+}
+/* mobile Using CSS */
+@media screen and (min-width:768px) and (max-width:1023px){
+    .wrap > header nav label,
+    .wrap > header nav input{display: none !important;}
+    .wrap{position: relative;}
+    header{position: fixed; width: 100%; z-index: 1;}
+    .sub header{background-color: rgba(0, 0, 0, 0.5);}
+    header h1{
+        background: url("../images/top_logo.png") no-repeat center;
+        background-size: contain;
+        width: 15%; margin: 0 auto;
+        height: 100px;
+        text-indent: -9999px;
+    }
+    header ul{position: absolute; top: 40%; width: 100%;}
+    header ul::after{
+        content: ""; display: block; visibility: hidden;
+        clear: both;
+    }
+    header ul li{position: absolute; list-style: none; float: left; }
+    header ul li:first-of-type{left: 3%;}
+    header ul li:nth-of-type(2){left: 57.5%;}
+    header ul li:nth-of-type(3){left: 60%;}
+    header ul li:nth-of-type(4){left: 65.5%;}
+    header ul li:nth-of-type(5){left: 68.5%;}
+    header ul li:nth-of-type(6){left: 79.2%;}
+    header ul li:last-of-type{left: 86.5%;}
+    header ul li a{
+        text-decoration: none; color: white; font-size: 1vw;
+        font-weight: 700; text-transform: uppercase; display: block;
+    }
+
+    header ul li a:before, header ul li a:after {
+        content: '';
+        border-bottom: solid 1px white;
+        position: absolute;
+        bottom: 0;
+        width: 0;
+    }
+      
+    header ul li a:before { left: 0; }
+    header ul li a:after { right: 0; }
+      
+    header ul li a:hover:before, header ul li a:hover:after {
+        width: 50%;
+    }
+    header ul li a.active:before, header ul li a.active:after {
+        width: 50%;
+    }
+    header ul li a:before, header ul li a:after {
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+    }
+    /* header fin */
+
+    .wrap footer{width: 100%; background-color: #262626; position: relative; height: 100px;}
+    .wrap footer h2{
+        text-indent: -9999px;
+        background: url(../images/footerLOGO.png) no-repeat center; width: 10%;
+        background-size: contain; position: absolute; height: 50px; left: 45%; top: 30%;
+    }
+    .wrap footer ul{width: 100%; text-align: center; position: relative; height: 100%; }
+    .wrap footer ul::after{
+        content: ""; display: block; visibility: hidden; clear: both;
+    }
+    .wrap footer ul li{float: left; list-style: none; position: absolute; top: 48%;}
+    .wrap footer ul li{width: 15%;}
+    .wrap footer ul li:nth-of-type(2){left: 15%;}
+    .wrap footer ul li:nth-of-type(3){left: 30%;}
+    .wrap footer ul li:nth-of-type(4){right: 30%;}
+    .wrap footer ul li:nth-of-type(5){right: 15%;}
+    .wrap footer ul li:last-of-type{right: 0;}
+    .wrap footer ul li a{text-decoration: none; color: white; font-size: 1.3vw;}
+}
+/* tablet Using CSS */
+@media screen and (min-width:1024px){
+    .wrap > header nav label,
+    .wrap > header nav input{display: none !important;}
+    .wrap{position: relative;}
+    header{position: fixed; width: 100%; z-index: 1;}
+    .sub header{background-color: rgba(0, 0, 0, 0.5);}
+    header h1{
+        background: url("../images/top_logo.png") no-repeat center;
+        background-size: contain;
+        width: 15%; margin: 0 auto;
+        height: 100px;
+        text-indent: -9999px;
+    }
+    header ul{position: absolute; top: 40%; width: 100%;}
+    header ul::after{
+        content: ""; display: block; visibility: hidden;
+        clear: both;
+    }
+    header ul li{position: absolute; list-style: none; float: left; }
+    header ul li:first-of-type{left: 3%;}
+    header ul li:nth-of-type(2){left: 59%;}
+    header ul li:nth-of-type(3){left: 62%;}
+    header ul li:nth-of-type(4){left: 67%;}
+    header ul li:nth-of-type(5){left: 70%;}
+    header ul li:nth-of-type(6){left: 80%;}
+    header ul li:last-of-type{left: 86.5%;}
+    header ul li a{
+        text-decoration: none; color: white; font-size: 0.9vw;
+        font-weight: 700; text-transform: uppercase; display: block;
+    }
+
+    header ul li a:before, header ul li a:after {
+        content: '';
+        border-bottom: solid 1px white;
+        position: absolute;
+        bottom: 0;
+        width: 0;
+    }
+      
+    header ul li a:before { left: 0; }
+    header ul li a:after { right: 0; }
+      
+    header ul li a:hover:before, header ul li a:hover:after {
+        width: 50%;
+    }
+    header ul li a.active:before, header ul li a.active:after {
+        width: 50%;
+    }
+    header ul li a:before, header ul li a:after {
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+    }
+    /* header fin */
+
+    .wrap footer{width: 100%; background-color: #262626; position: relative; height: 150px;}
+    .wrap footer h2{
+        text-indent: -9999px;
+        background: url(../images/footerLOGO.png) no-repeat center; width: 10%;
+        background-size: contain; position: absolute; top: 0; height: 80px; left: 45%; top: 35px;
+    }
+    .wrap footer ul{width: 100%; text-align: center; position: relative; height: 100%;}
+    .wrap footer ul::after{
+        content: ""; display: block; visibility: hidden; clear: both;
+    }
+    .wrap footer ul li{float: left; list-style: none; position: absolute; top: 48%;}
+    .wrap footer ul li{width: 15%;}
+    .wrap footer ul li:nth-of-type(2){left: 15%;}
+    .wrap footer ul li:nth-of-type(3){left: 30%;}
+    .wrap footer ul li:nth-of-type(4){right: 30%;}
+    .wrap footer ul li:nth-of-type(5){right: 15%;}
+    .wrap footer ul li:last-of-type{right: 0;}
+    .wrap footer ul li a{text-decoration: none; color: white; font-size: 1vw;}
+}
+/* desktop Using CSS */
