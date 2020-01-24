@@ -79,8 +79,26 @@
         text-decoration: none;
         font-size: 1.5em;
     }
-    .wrap > header #overlay ul li a.active{
-        color: #333332;
+    .wrap > header #overlay ul li:first-of-type a.active{
+        color: #019989;
+    }
+    .wrap > header #overlay ul li:nth-of-type(2) a.active{
+        color: #83879c;
+    }
+    .wrap > header #overlay ul li:nth-of-type(3) a.active{
+        color: #4f807d;
+    }
+    .wrap > header #overlay ul li:nth-of-type(4) a.active{
+        color: #1c3459;
+    }
+    .wrap > header #overlay ul li:nth-of-type(5) a.active{
+        color: #630e0b;
+    }
+    .wrap > header #overlay ul li:nth-of-type(6) a.active{
+        color: #182829;
+    }
+    .wrap > header #overlay ul li:last-of-type a.active{
+        color: #54767d;
     }
     /* header fin */
 
