@@ -26,7 +26,7 @@
     .wrap{position: relative;}
     header{position: fixed; width: 100%; z-index: 1;}
     header::after{content: ""; display: block; visibility: hidden; clear: both;}
-    .sub header{background-color: rgba(0, 0, 0, 0.5); height: 45px;}
+    .sub header{background-color: rgba(0, 0, 0, 0.5); height: 40px;}
     header h1{
         background: url("../images/top_logo.png") no-repeat center;
         background-size: contain;
